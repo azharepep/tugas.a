@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lengkap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Pria</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Wanita</label>
+            </div>
+            <div class="form-group">
+                <label for="hobi">Hobi:</label>
+                <input type="checkbox" id="hobi1" name="hobi[]" value="membaca">
+                <label for="hobi1">Membaca</label>
+                <input type="checkbox" id="hobi2" name="hobi[]" value="bermain musik">
+                <label for="hobi2">Bermain Musik</label>
+                <input type="checkbox" id="hobi3" name="hobi[]" value="olahraga">
+                <label for="hobi3">Olahraga</label>
+            </div>
+            <div class="form-group">
+                <label for="kota">Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="medan">Medan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
